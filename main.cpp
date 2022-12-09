@@ -9,8 +9,8 @@ int main(){
         cin>>numeri[i];
     }
     float x=0;
-    for (int i = 0; i < n-1;i++) {
-        float y= nmaggiore(numeri[i], numeri[i+1]);
+    for (int i = 1; i < n;i++) {
+        float y= nmaggiore(numeri[i], numeri[i-1]);
         if (y>x){
             x=y;
         }
